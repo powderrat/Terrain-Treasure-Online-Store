@@ -42,4 +42,12 @@ There will be receipts created and automatic emails sent out upon order confirma
 <img src="Images/Wireframe-Account-Hub.jpg" width="400">
 
 - User must be logged in to view Account
+  
 ## User Stories 
+1. As a customer, I want to browse the available terrain and other products so I can find items to purchase
+2. As a customer, I want detailed information about the product so i can understand what it is and what it looks like
+3. As a customer, I want to add products to my shopping cart so I can buy them and recive them in the mail
+4. As an Administator, I want to manage product listings so i can add,update, or remove items
+5. As an Administator, I want to Update inventory levels so that product availability remains accurate
+
+## Use Cases
