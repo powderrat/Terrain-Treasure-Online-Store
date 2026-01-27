@@ -1,4 +1,5 @@
-# Terrain & Treasure Online Store
+# Terrain & Treasure Online Store 
+![alt text](https://github.com/powderrat/Terrain-Treasure-Online-Store/blob/main/Images/t&tLogo.png "Company Logo")
 Online storefront for my D&amp;D Terrain, The purpose of this software is to move my tabletop gaming products business from Etsy to a dedicated, cloud-hosted web application. The store will allow me to have full control of the sales process and customize the user experience. It will handle product browsing, cart management, order placement, and account management. I will be building it using ASP.NET Core MVC along with third party APIs to handle payment and shipping 
 
 ## Functional Requirements 
