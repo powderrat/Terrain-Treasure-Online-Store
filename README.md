@@ -1,4 +1,4 @@
-# Terrain & Treasure Online Store 
+# Terrains & Treasures Online Store 
 <p align="center">
 <img src="Images/t&amp;tLogo.png" width="200">
 </p>
