@@ -24,3 +24,5 @@ The system will handle updating inventory, order validation, and user authentica
 ### Output
 There will be receipts created and automatic emails sent out upon order confirmation. There will also be an account dashboard where the user info will be displayed. There may be some administrative report functionality built in time permitting.
 
+## Architecture Block Diagram
+<img src="Images/Block_Diagram_T&T.drawio.png">
