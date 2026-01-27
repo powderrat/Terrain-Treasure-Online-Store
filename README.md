@@ -51,3 +51,105 @@ There will be receipts created and automatic emails sent out upon order confirma
 5. As an Administator, I want to Update inventory levels so that product availability remains accurate
 
 ## Use Cases
+
+### UC-01: Register Account
+
+Primary Actor: Customer 
+Goal: Create a new user account 
+Preconditions: Customer does not have account
+Trigger: Customer selects create account 
+
+#### Main Flow:
+1. System displays registration form
+2. Customer enters name, email,password,shipping address
+3. Customer Submits form
+4. system Validates Input
+5. System Creates new user record in the database
+6. System confirms registration
+
+Alternate Flows:
+A1. Email already exsists: Displays errors and requests new email
+A2. Invalid or missing fields: Displays error about the particualr field(s)
+
+Postconditions: Customer has an account
+
+### UC-02: Browse Products 
+Primary Actor: Customer
+Goal: View products and categories.
+Preconditions: Product catalog exsists 
+Trigger: Customer navigates to home page or a category page 
+
+#### Main Flow:
+1. System displays a list of products
+2. Customer scrolls product tiles
+3. Customer selects product to view more details
+
+Postconditions: Customer views products 
+
+### UC-03: View Product Details
+
+Primary Actor: Customer 
+Goal: View details for a specific product
+Preconditions: Product exists in the database
+Trigger: Customer selects a product from the product listing
+
+#### Main Flow:
+1. System displays product title, images, description, and price
+2. Customer reviews the details
+3. Customer selects quantity (default = 1)
+4. Customer selects Add to Cart
+
+Alternate Flows:
+A1. Product is out of stock: System disables Add to Cart and displays Out of Stock
+
+Postconditions: Product is ready to be added to cart (or blocked if unavailable)
+
+### UC-04: Add Item to Cart
+
+Primary Actor: Customer 
+Goal: Add one or more products to a shopping cart
+Preconditions: Product exists in the database and is in stock
+Trigger: Customer selects add to cart from product details page
+
+#### Main Flow:
+1. System creates a cart (if one does not already exist) for the current session/user
+2. System adds the selected product and quantity to the cart
+3. System updates cart totals
+4. System displays confirmation and shows the updated cart
+
+Alternate Flows:
+A1. Requested quantity exceeds inventory: System adjusts quantity to available stock and displays an error
+A2. Product already in cart: System increases the quantity and updates totals
+
+Postconditions: Cart contains the selected item(s) and updated totals
+
+### UC-05: Checkout and Place Order
+
+Primary Actor: Customer 
+Supporting Actor: Payment Provider
+Goal: Submit payment and create an order record 
+Preconditions: Customer has items in cart
+Trigger: Customer clicks Proceed to Checkout
+
+#### Main Flow:
+1. System displays checkout summary (items, totals, shipping address)
+2. Customer confirms order details
+3. System creates a pending order record in the database
+4. System redirects the customer to the payment provider checkout
+5. Payment provider processes payment and returns a success/failure result
+6. On success, system marks the order as paid and stores the payment reference ID
+7. System displays an order confirmation and sends a confirmation email
+
+Alternate Flows:
+A1. Payment failed/canceled: System keeps order as unpaid/pending and displays an error message
+A2. Cart is empty: System blocks checkout and returns customer to home
+A3. Customer does not have an account: 
+- The system displays a guest checkout option
+- The system collects the customer’s email address and shipping information required to complete the order and send a receipt
+- The system also provides an option to create an account before checkout 
+
+Postconditions:
+- Successful payment: Order exsist in dabase with status paid and recpeit email to customer
+- Failed Payment: Order exsist in database with status unpaid
+
+## UML Use Case Diagram
