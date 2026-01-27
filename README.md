@@ -30,15 +30,15 @@ There will be receipts created and automatic emails sent out upon order confirma
 ## Wireframes
 
 ### Home 
-<img src="Images/Wireframe-Home.jpg">
+<img src="Images/Wireframe-Home.jpg" width="200">
 
 ### Product Detail
-<img src="Images/Wireframe-Product-Detail.jpg">
+<img src="Images/Wireframe-Product-Detail.jpg" width="200">
 
 ### Cart
-<img src="Images/Wireframe-Cart.jpg">
+<img src="Images/Wireframe-Cart.jpg" width="200">
 
 ### Account 
-<img src="Images/Wireframe-Account-Hub.jpg">
+<img src="Images/Wireframe-Account-Hub.jpg" width="200">
 
 ## User Stories 
