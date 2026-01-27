@@ -40,5 +40,6 @@ There will be receipts created and automatic emails sent out upon order confirma
 
 ### Account 
 <img src="Images/Wireframe-Account-Hub.jpg" width="400">
-* User must be logged in to view Account
+
+- User must be logged in to view Account
 ## User Stories 
