@@ -154,4 +154,4 @@ Postconditions:
 
 ## UML Use Case Diagram
 
-<img src="Images/UML_Use_Case.jpg" width="400">
+<img src="Images/UML_Use_Case.jpg">
