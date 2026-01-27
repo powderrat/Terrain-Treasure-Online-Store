@@ -153,3 +153,5 @@ Postconditions:
 - Failed Payment: Order exsist in database with status unpaid
 
 ## UML Use Case Diagram
+
+<img src="Images/UML_Use_Case.jpg" width="400">
