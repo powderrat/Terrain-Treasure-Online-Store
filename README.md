@@ -5,13 +5,16 @@
 Online storefront for my D&amp;D Terrain, The purpose of this software is to move my tabletop gaming products business from Etsy to a dedicated, cloud-hosted web application. The store will allow me to have full control of the sales process and customize the user experience. It will handle product browsing, cart management, order placement, and account management. I will be building it using ASP.NET Core MVC along with third party APIs to handle payment and shipping 
 
 ## Functional Requirements 
-The software lets the user register an account, browse product categories, add items to shopping cart, complete purchase, and check status of existing orders. Data will be stored using PostgreSQL and EF Core to connect it to the store. The following data will be stored in the database
-  *	User details (ID, names, email, address, phone, registration date)
-  *	Product details (ID, names, descriptions, prices)
-  *	Order records (ID, user ID, product IDs, date/time)
-  *	Inventory levels (ID, product ID, amount)
-  *	Transaction records (ID, Order ID, date/time)
-  *	Shipping information (ID, tracking numbers, carrier)
+| ID | Requirement |
+|---:|---|
+| R-01 | The system shall display a catalog of available products including product name, price, and a thumbnail image. |
+| R-02 | The system shall allow users to view a product details page showing the product name, description, price, and one or more product images. |
+| R-03 | The system shall allow users to add a selected product and quantity to a shopping cart and shall update the cart totals accordingly. |
+| R-04 | The system shall prevent adding items to the cart when the requested quantity exceeds available inventory and shall display an error message. |
+| R-05 | The system shall allow users to register an account by submitting a name, email, password, and shipping address, and shall create a user record upon successful validation. |
+| R-06 | The system shall create an order record when checkout is initiated and shall record the payment result returned by the payment provider. |
+| R-07 | The system shall allow an administrator to create, update, and remove product listings. |
+| R-08 | The system shall allow an administrator to update inventory levels for products and reflect availability changes in the storefront. |
 
 ## Input, Processing, Output
 
