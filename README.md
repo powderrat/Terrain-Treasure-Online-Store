@@ -5,7 +5,14 @@
 Online storefront for my D&amp;D Terrain, The purpose of this software is to move my tabletop gaming products business from Etsy to a dedicated, cloud-hosted web application. The store will allow me to have full control of the sales process and customize the user experience. It will handle product browsing, cart management, order placement, and account management. I will be building it using ASP.NET Core MVC along with third party APIs to handle payment and shipping 
 
 ## Table Of Contents 
--[Funtional Requirements](#functional-requirements)
+- [Funtional Requirements](#functional-requirements)
+- [I/O Processing](#input,-processing,-output)
+- [Wireframes](#wireframes)
+- [User Stories](#user-stories)
+- [Use Cases](#use-cases)
+- [UML Use Case Diagram](#uml-use-case-diagram)
+- [Entity Relationship Diagram](#entity-relationship-diagram)
+- [UML Class Diagram](#uml-class-diagram)
 
 ## Functional Requirements 
 | ID | Requirement |
@@ -161,3 +168,12 @@ Postconditions:
 ## UML Use Case Diagram
 
 <img src="Images/UML_Use_Case.jpg">
+
+## Entity Relationship Diagram
+
+<img src="Images/TNTERD.drawio.png">
+
+## UML Class Diagram
+
+<img src="Images/UML.png">
+
