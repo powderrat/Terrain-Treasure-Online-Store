@@ -42,9 +42,9 @@ This lists all the products and their current quantitys and if it is below a cer
 This page allows admins to edit any info about a product as well as add a new product 
 
 ### Admin Dashboard
-This is not set up yet, however it will have 5 visual aids for the admin
-A month to month sales line graph
-Top 5 sold products and % of sales they are pie chart
-Cusomter aqustion month over month (new accounts created)
-Bottom 5 products 
+This is not set up yet, however it will have 5 visual aids for the admin <br>
+A month to month sales line graph <br>
+Top 5 sold products and % of sales they are pie chart <br>
+Cusomter aqustion month over month (new accounts created) <br>
+Bottom 5 products <br>
 Average oder total month over month. 
