@@ -7,7 +7,7 @@
 #### This prototype will show the flow from user loading the home page to checking out (All these screenshots are from HTML/Bootstrap not drawings)
 
 ### Landing page
-<img src="Prototype/Images/HomePage.jpg" width="200">
+<img src="Images/HomePage.jpg" width="200">
  users can browse all products. There will be a filter and search added later 
  
 ### Product Details
