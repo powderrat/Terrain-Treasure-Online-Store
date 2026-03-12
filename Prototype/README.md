@@ -11,7 +11,7 @@
  users can browse all products. There will be a filter and search added later 
  
 ### Product Details
-<img src="Images/ProductDeatils.jpg">
+<img src="Images/ProductDetails.jpg">
 <img src="Images/ProductDetailsQuantity.jpg">
 Once user selects the prodcut the products detail pages is loaded with a carousel of images.
 The quantity is generated form the inventory database and double cheked just before purchase to prevent ordering out of stock products. 
