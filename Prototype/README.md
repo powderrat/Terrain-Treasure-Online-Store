@@ -1,6 +1,6 @@
 # Terrains & Treasures Online Store Prototype
 <p align="center">
-<img src=".../Images/t&amp;tLogo.png" width="200">
+<img src="../Images/t&amp;tLogo.png" width="200">
 </p>
 
 ## Use Cases UC-01 ~ UC-05 
