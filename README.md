@@ -13,6 +13,8 @@ Online storefront for my D&amp;D Terrain, The purpose of this software is to mov
 - [UML Use Case Diagram](#uml-use-case-diagram)
 - [Entity Relationship Diagram](#entity-relationship-diagram)
 - [UML Class Diagram](#uml-class-diagram)
+- [Data Access Layer](#data-access-layer)
+
 
 ## Functional Requirements 
 | ID | Requirement |
@@ -177,3 +179,14 @@ Postconditions:
 
 <img src="Images/UML.png">
 
+## Data Access Layer
+
+This project uses Entity Framework Core with a PostgreSQL database via Npgsql.
+Data is accessed through `T_TContext` which exposes DbSets for Products, Orders,
+Users, Inventory, and more.
+
+A REST API endpoint is available at `/Products/GetAll` which returns all products
+as a JSON response.
+
+<img src="Images/Data_Access.jpg">
+<img src="Images/Product_Screenshot.jpg"
