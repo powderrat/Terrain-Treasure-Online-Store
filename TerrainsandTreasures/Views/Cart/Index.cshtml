@@ -1,0 +1,51 @@
+﻿@model Terrains_Treasures.ViewModels.CartViewModel
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<h1>Cart</h1>
+<div class="row">
+    <div class="col-md-6">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody> 
+                @foreach(var item in Model.Items)
+                {
+                    <tr><td>@item.ProductName</td>
+                        <td>$@item.Price</td>
+                        <td>
+                            <form asp-controller="Cart" asp-action="UpdateQuantity" method="post">
+                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                <input type="number" name="newQuantity" value="@item.Quantity" min="1" class="form-control form-control-sm" style="width:64px" />
+                                <button type="submit" class="btn btn-outline-primary btn-sm mt-1">Update</button>
+                            </form>
+                        </td>
+                        
+                        <td>$@(item.Price * item.Quantity)</td>
+                        <td><img src="~/Images/@item.ProductId/@item.ImageName" style="height:100px; width:100px;" /> </td>
+                        <td>
+                            <form asp-controller="Cart" asp-action="Delete" method="post">
+                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                <button type="submit" class="btn btn-outline-danger btn-sm mt-4"><i class="bi bi-trash fs-6"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <h4 class="text-primary">Total: $@Model.TotalPrice </h4>
+        <form asp-controller="Checkout" asp-action="Index" method="post">
+            <button type="submit" class="btn btn-outline-success">Proceed to Checkout</button>
+        </form>
+    </div>
+</div>
+
