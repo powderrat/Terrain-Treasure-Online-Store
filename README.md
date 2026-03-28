@@ -189,4 +189,4 @@ A REST API endpoint is available at `/Products/GetAll` which returns all product
 as a JSON response.
 
 <img src="Images/Data_Access.jpg">
-<img src="Images/Product_Screenshot.jpg"
+<img src="Images/Product_Screenshot.jpg">
